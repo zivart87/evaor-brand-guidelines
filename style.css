@@ -165,3 +165,6 @@ body{background:#e7e7e5}.sidebar{background:#fff}.nav-item.active{background:#f1
 /* Align the assets link with the sidebar brand and anchor it to the bottom. */
 @media(min-width:761px){.brand-assets-link{position:absolute;left:28px;right:28px;bottom:38px;margin:0}}
 .brand-assets-link{border-radius:999px;background:#f1f1ef;border-color:transparent;color:#666;font-family:inherit;font-weight:400}.brand-assets-link:hover{background:#e7e7e5;border-color:transparent;color:#151515}
+
+/* Compact, centered brand assets button */
+.brand-assets-link{justify-content:center;gap:7px;padding:9px 14px;background:#e8f1ff;color:#45566f}.brand-assets-link:hover{background:#dbe9fd;color:#263c5a}
