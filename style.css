@@ -245,7 +245,7 @@ body{background:#e7e7e5}.sidebar{background:#fff}.nav-item.active{background:#f1
 .digital-mobile .digital-body-example p{font-size:calc(16 * var(--type-unit));line-height:1.5}
 .digital-side-examples>div:nth-child(1)>p{font-size:calc(15 * var(--type-unit));line-height:1.6}
 .digital-side-examples>div:nth-child(2)>p{font-size:calc(14 * var(--type-unit));line-height:calc(20 / 14)}
-.digital-side-examples .digital-cta{font-size:calc(14 * var(--type-unit));line-height:calc(16 / 14)}
+.digital-side-examples .digital-cta{font-size:calc(15 * var(--type-unit));line-height:calc(16 / 15)}
 @media(max-width:760px){
  .typography-intro .color-intro-symbol{opacity:.25}
  .digital-type-slide{--type-unit:.55px;min-height:0;padding-top:50px;padding-bottom:55px}
@@ -288,3 +288,87 @@ body{background:#e7e7e5}.sidebar{background:#fff}.nav-item.active{background:#f1
 .grid-small-row{display:grid;grid-template-columns:1fr 2fr;gap:3cqw;min-height:0}
 .grid-mobile .grid-values{column-gap:1.4cqw;font-size:1.05cqw}
 @media(max-width:760px){.layout-grid-slide{min-height:1100px;aspect-ratio:auto}.grid-header-note{font-size:10px;max-width:52%}.layout-grid-board{top:18%;bottom:auto;display:flex;flex-direction:column;gap:28px}.grid-small-row{display:flex;flex-direction:column;gap:28px}.grid-spec{flex-shrink:0}.grid-spec figcaption{margin-bottom:14px;gap:10px}.grid-spec figcaption strong{font-size:16px}.grid-spec figcaption strong span{font-size:12px}.grid-spec figcaption>span{font-size:10px}.grid-stage{flex:0 0 auto;height:160px}.grid-dimension span{font-size:8px}.grid-values,.grid-mobile .grid-values{font-size:12px;column-gap:24px;row-gap:4px;margin-top:14px}}
+
+#digital-type-desktop .digital-side-examples>div:first-child>p{font-size:calc(16 * var(--type-unit));line-height:calc(22 / 16)}
+
+/* Shapes: keep all specimen information inside the presentation stages. */
+.shapes-graphic-board{grid-template-rows:1fr;row-gap:0}
+.shape-example{display:block}
+.shape-stage{height:100%;position:relative;box-sizing:border-box;padding:4.8cqw 1cqw 0;border-radius:0}
+.shape-stage .shape-kind{position:absolute;top:2cqw;left:2cqw;margin:0;font:400 1.8cqw/1.3 Manrope,Arial,sans-serif}
+.shape-stage svg{max-height:none;min-height:0}
+@media(max-width:760px){.shapes-graphic-board{grid-template-rows:1fr 1fr;row-gap:24px}.shape-stage{padding:50px 10px 0}.shape-stage .shape-kind{top:20px;left:20px;font-size:20px}.shape-stage svg{max-height:320px}}
+
+/* Spacing: illustration first, values and explanations grouped below. */
+.spacing-guide .space-diagram{margin:0 0 1.1cqw;flex:1;min-height:0}
+.spacing-guide .space-diagram svg{max-height:10cqw}
+.space-copy{flex:none}
+.spacing-guide .space-top{margin-bottom:.45cqw}
+.spacing-guide .space-top strong{font-size:2.2cqw;line-height:1.1}
+.spacing-guide .space-name{font-size:1.65cqw;line-height:1.25;font-weight:500}
+.spacing-guide .space-detail{font-size:1.15cqw;line-height:1.45;margin-top:.55cqw;min-height:2.9em}
+@media(max-width:760px){.spacing-guide .space-diagram{margin:0 0 16px}.spacing-guide .space-diagram svg{max-height:110px}.spacing-guide .space-top{margin-bottom:7px}.spacing-guide .space-top strong{font-size:23px}.spacing-guide .space-name{font-size:16px}.spacing-guide .space-detail{font-size:11px;margin-top:8px}}
+
+/* Spacing hierarchy: prominent values, separated from the descriptive text. */
+.spacing-guide .space-top{margin-bottom:1.05cqw;gap:.45cqw}
+.spacing-guide .space-top strong{font-size:3.15cqw;line-height:1;font-weight:400;letter-spacing:-.035em}
+.spacing-guide .space-top span{font-size:1.1cqw;color:#555}
+.spacing-guide .space-detail{margin-top:.35cqw;color:#555}
+.spacing-guide .space-diagram{margin-bottom:.85cqw}
+@media(max-width:760px){.spacing-guide .space-top{margin-bottom:15px;gap:4px}.spacing-guide .space-top strong{font-size:28px}.spacing-guide .space-top span{font-size:11px}.spacing-guide .space-detail{margin-top:5px}.spacing-guide .space-diagram{margin-bottom:14px}}
+
+/* EvaOr buttons: component specimens and interaction states. */
+.button-header-note{position:absolute;right:5.05%;top:10.46%;font:400 1.05cqw/1.6 Manrope,Arial,sans-serif;color:#777;text-align:right}
+.button-types-board{position:absolute;left:5.05%;right:5.05%;top:20.14%;bottom:16%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.6cqw}
+.button-type{background:#f5f5f3;border-radius:0;padding:2cqw;display:flex;flex-direction:column;min-width:0}
+.button-type h3{margin:0;font:400 1.8cqw/1.3 Manrope,Arial,sans-serif}
+.button-showcase{flex:1;display:flex;justify-content:center;align-items:center;min-height:0}
+.eva-button{--button-unit:.12cqw;box-sizing:border-box;min-height:calc(48 * var(--button-unit));padding:calc(14 * var(--button-unit)) calc(24 * var(--button-unit));display:inline-flex;align-items:center;justify-content:center;gap:calc(8 * var(--button-unit));border:1px solid transparent;border-radius:999px;font:500 calc(15 * var(--button-unit))/calc(20 * var(--button-unit)) Manrope,Arial,sans-serif;white-space:nowrap;cursor:pointer;transition:background-color .18s,color .18s,border-color .18s;appearance:none;text-decoration:none}
+.eva-button svg{width:calc(16 * var(--button-unit));height:calc(16 * var(--button-unit));flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.eva-button--primary{background:#111;color:#fff}
+.eva-button--secondary{background:transparent;color:#111;border-color:#111}
+.eva-button--text{background:transparent;color:#111;padding-left:0;padding-right:0}
+.button-brand-edge{padding:3px;border-radius:999px;background:linear-gradient(180deg,#1a6ce8,#ffdbb3 90%)}
+.button-type-copy strong{font:500 1.5cqw/1.35 Manrope,Arial,sans-serif}
+.button-type-copy p{margin:.6cqw 0 0;font:400 1.15cqw/1.5 Manrope,Arial,sans-serif;color:#555;min-height:3em}
+.button-anatomy-note{position:absolute;left:5.05%;right:5.05%;bottom:10%;display:flex;justify-content:space-between;font:400 1.05cqw/1.5 Manrope,Arial,sans-serif;color:#666}
+.button-states-board{position:absolute;left:5.05%;right:5.05%;top:20.14%;bottom:15%;display:grid;grid-template-columns:12% repeat(3,minmax(0,1fr));grid-template-rows:auto repeat(5,1fr);column-gap:1.2cqw;row-gap:1cqw}
+.button-state-heading{font:400 1.65cqw/1.3 Manrope,Arial,sans-serif;padding-bottom:.5cqw}
+.button-state-label{align-self:center;font:400 1.3cqw/1.3 Manrope,Arial,sans-serif}
+.button-state-cell{background:#f5f5f3;display:flex;align-items:center;justify-content:center;padding:.5cqw;min-width:0}
+.button-state-cell .eva-button{--button-unit:.095cqw}
+.eva-button--primary:hover,.eva-button--primary.is-hover{background:#333}
+.eva-button--secondary:hover,.eva-button--secondary.is-hover{background:#e8f1ff}
+.eva-button--text:hover,.eva-button--text.is-hover{text-decoration:underline;text-underline-offset:4px}
+.eva-button--primary:active,.eva-button--primary.is-pressed{background:#000}
+.eva-button--secondary:active,.eva-button--secondary.is-pressed{background:#d6e5fc}
+.eva-button--text:active,.eva-button--text.is-pressed{color:#174f9d;text-decoration:underline;text-underline-offset:4px}
+.eva-button:focus-visible,.eva-button.is-focus{outline:2px solid #1a6ce8;outline-offset:3px}
+.eva-button:disabled{background:#e1e1df;color:#777;border-color:transparent;cursor:default;text-decoration:none}
+.eva-button--secondary:disabled{background:transparent;border-color:#c8c8c5}
+.eva-button--text:disabled{background:transparent}
+.button-states-note{position:absolute;left:5.05%;bottom:9.5%;font:400 1.1cqw/1.5 Manrope,Arial,sans-serif;color:#666}
+@media(max-width:760px){.buttons-slide{min-height:1100px;aspect-ratio:auto}.button-header-note{font-size:9px;max-width:50%}.button-types-board{grid-template-columns:1fr;gap:14px;bottom:15%;top:20%}.button-type{padding:20px}.button-type h3{font-size:20px}.eva-button,.button-state-cell .eva-button{--button-unit:1px}.button-type-copy strong{font-size:15px}.button-type-copy p{font-size:12px;min-height:0;margin-top:5px}.button-showcase{padding:20px 0}.button-anatomy-note{font-size:11px;flex-direction:column;gap:5px;bottom:7%}.button-states-slide{overflow-x:auto;min-height:850px}.button-states-board{min-width:720px;right:auto;width:89.9%;bottom:18%;gap:12px}.button-state-heading{font-size:17px}.button-state-label{font-size:14px}.button-state-cell{padding:12px}.button-states-note{font-size:11px;bottom:10%;max-width:85%}}
+
+.button-anatomy-note{font-size:1.15cqw}
+@media(max-width:760px){.button-anatomy-note{font-size:11px}}
+
+/* Buttons use text only, without gradient borders or arrows. */
+.button-primary-example{display:contents}
+.eva-button--inverse{background:#fff;color:#111}
+.eva-button--inverse:hover,.eva-button--inverse.is-hover{background:#e1e1df;color:#111}
+.eva-button--inverse:active{background:#c8c8c5}
+.button-backgrounds-board{position:absolute;left:5.05%;right:5.05%;top:20.14%;bottom:10%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.6cqw}
+.button-background-demo{padding:2cqw;display:flex;flex-direction:column;min-width:0;border-radius:0}
+.button-background-demo--light{background:#f5f5f3;color:#111}
+.button-background-demo--dark{background:#111;color:#fff}
+.button-background-demo--gradient{background:linear-gradient(180deg,#1a6ce8 0%,#ffdbb3 90%);color:#111}
+.button-background-demo h3{font:400 1.8cqw/1.3 Manrope,Arial,sans-serif;margin:0}
+.button-background-demo--gradient h3{color:#fff}
+.button-background-state{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.4cqw}
+.button-background-state>span{font:400 1.2cqw/1.3 Manrope,Arial,sans-serif}
+.button-background-demo--gradient .button-background-state:first-of-type>span{color:#fff}
+@media(max-width:760px){.button-backgrounds-board{grid-template-columns:1fr;gap:14px;bottom:8%}.button-background-demo{padding:20px}.button-background-demo h3{font-size:20px}.button-background-state{padding:14px 0;gap:10px}.button-background-state>span{font-size:12px}}
+
+.button-backgrounds-slide{background:#f1f1ef}.button-background-demo--light{background:#fff}
+`n.button-background-demo{position:relative}.button-background-demo .button-background-state{position:absolute;inset:0;padding:0;gap:0}
