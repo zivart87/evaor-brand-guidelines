@@ -371,4 +371,5 @@ body{background:#e7e7e5}.sidebar{background:#fff}.nav-item.active{background:#f1
 @media(max-width:760px){.button-backgrounds-board{grid-template-columns:1fr;gap:14px;bottom:8%}.button-background-demo{padding:20px}.button-background-demo h3{font-size:20px}.button-background-state{padding:14px 0;gap:10px}.button-background-state>span{font-size:12px}}
 
 .button-backgrounds-slide{background:#f1f1ef}.button-background-demo--light{background:#fff}
-`n.button-background-demo{position:relative}.button-background-demo .button-background-state{position:absolute;inset:0;padding:0;gap:0}
+
+.button-background-demo{position:relative}.button-background-demo .button-background-state{position:absolute;inset:0;padding:0;gap:0}
