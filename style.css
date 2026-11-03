@@ -379,7 +379,7 @@ body{background:#e7e7e5}.sidebar{background:#fff}.nav-item.active{background:#f1
 .accent-button-stage{position:absolute;left:5.05%;right:5.05%;top:20.14%;bottom:10%;background:#fff;display:flex;align-items:center;justify-content:center}
 .accent-button-preview{text-align:center}
 .eva-accent-button{position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;min-height:5.9cqw;padding:1.7cqw 4cqw;border:0;border-radius:999px;background:#e8eff8;color:#111;font:500 1.85cqw/1.3 Manrope,Arial,sans-serif;cursor:pointer;transition:transform .3s ease,box-shadow .3s ease;box-shadow:inset 0 1px 1px #ffffffb3}
-.eva-accent-button::before,.eva-accent-button::after{content:"";position:absolute;pointer-events:none;border-radius:inherit;background:linear-gradient(90deg,#FFFAF3 0%,#1a6ce8 12.5%,#FFFAF3 25%,#ffdbb3 37.5%,#FFFAF3 50%,#1a6ce8 62.5%,#FFFAF3 75%,#ffdbb3 87.5%,#FFFAF3 100%);background-size:200% 100%;animation:eva-accent-drift 7s linear infinite}
+.eva-accent-button::before,.eva-accent-button::after{content:"";position:absolute;pointer-events:none;border-radius:inherit;background:linear-gradient(100deg,#FFFAF3 0%,#1a6ce8 12%,#FFFAF3 26%,#ffdbb3 40%,#FFFAF3 52%,#1a6ce8 65%,#FFFAF3 78%,#ffdbb3 90%,#FFFAF3 100%);background-size:600% 100%;animation:eva-accent-drift 7s linear infinite}
 .eva-accent-button::before{inset:-6px;filter:blur(18px);opacity:.45;z-index:-2}
 .eva-accent-button::after{inset:2px;filter:blur(10px);opacity:.7;z-index:-1}
 .eva-accent-button span{position:relative;z-index:1;padding:.15em .3em;border-radius:999px;background:transparent;box-shadow:none}
@@ -387,8 +387,7 @@ body{background:#e7e7e5}.sidebar{background:#fff}.nav-item.active{background:#f1
 .eva-accent-button:active{transform:scale(.98)}
 .eva-accent-button:focus-visible{outline:2px solid #1a6ce8;outline-offset:8px}
 .accent-button-preview p{margin:4cqw 0 0;color:#666;font:400 1.2cqw/1.5 Manrope,Arial,sans-serif}
-/* Two identical colour periods; moving by one period makes the loop seamless. */
-@keyframes eva-accent-drift{from{background-position:0% 0}to{background-position:100% 0}}
+@keyframes eva-accent-drift{from{background-position:80% 0}to{background-position:0% 0}}
 @media(max-width:760px){.accent-button-slide{min-height:650px;aspect-ratio:auto}.eva-accent-button{min-height:58px;padding:18px 38px;font-size:18px}.accent-button-preview p{font-size:12px;margin-top:44px}}
 @media(prefers-reduced-motion:reduce){.eva-accent-button{transition:none}.eva-accent-button::before,.eva-accent-button::after{animation:none}}
 
