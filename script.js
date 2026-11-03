@@ -37,3 +37,21 @@ if (motionToggle) {
     motionToggle.textContent = playing ? 'Pause animation' : 'Play animation';
   });
 }
+
+// Match the 100-degree gradient period without changing its original visual speed.
+const accentGeometry = new ResizeObserver(entries => {
+  for (const entry of entries) {
+    const box = entry.borderBoxSize[0];
+    const button = entry.target;
+    const tangent = Math.tan(Math.PI / 18);
+    for (const [prefix, extra] of [['', 0], ['halo-', 12]]) {
+      const width = box.inlineSize + extra;
+      const height = box.blockSize + extra;
+      const shear = height * tangent / 2;
+      const duration = 7 * (3 * width + shear) / (4 * width);
+      button.style.setProperty(`--accent-${prefix}shear`, `${shear}px`);
+      button.style.setProperty(`--accent-${prefix}duration`, `${duration}s`);
+    }
+  }
+});
+document.querySelectorAll('.eva-accent-button').forEach(button => accentGeometry.observe(button));
